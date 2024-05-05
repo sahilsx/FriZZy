@@ -1,0 +1,134 @@
+.main {
+    background-color: rgb(35, 34, 34);
+    display: flex;
+    flex-direction: column;
+  
+    > h1 {
+      text-align: center;
+      color: aliceblue;
+      margin-bottom: 20px;
+    }
+  
+    > .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    
+  
+      > .card {
+        background-color: black;
+        display: flex;
+        width: 90%;
+        border-radius: 10px;
+  
+  
+  
+  
+        >.likes{
+          color: aliceblue;
+          margin-top: 60px;
+          flex: 1;
+          >h2{
+            text-align: center;
+  
+           
+          }
+        }
+  
+  
+        > .post {
+          color: aliceblue;
+          flex: 2;
+          display: flex;
+          flex-direction: column;
+          margin: 30px 0;
+          &:hover {
+            cursor: pointer;
+          }
+          border: 1px solid black;
+          padding: 10px;
+          border-radius: 5px;
+  
+          > .heading {
+            display: flex;
+            align-items: center;
+            > .profile-pic {
+              width: 50px;
+              height: 50px;
+              border: 2px solid white;
+              border-radius: 50%;
+              margin-right: 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              >img{
+                width: 50px;
+                
+              }
+            }
+          }
+  
+          > .icons {
+            margin-top: 10px;
+            > span {
+              margin-right: 15px;
+              cursor: pointer;
+            }
+          }
+  
+          > .counts {
+            margin-bottom: 10px;
+            > span {
+              margin-right: 20px;
+            }
+          }
+  
+          > img {
+            width: 100%;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  .comments {
+    color: aliceblue;
+    margin-top: 50px;
+    flex: 2;
+    height: 300px;
+    border-radius: 5px;
+    padding: 0px 10px;
+  
+    > h2 {
+      text-align: center;
+    }
+  
+    > div {
+      > .comment {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        position: relative;
+  
+        > .profile-pic {
+          width: 50px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 2px solid white;
+          border-radius: 50%;
+          margin-right: 20px;
+          >img{
+            width: 50px;
+          }
+        }
+      }
+    }
+  }
